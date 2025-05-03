@@ -1,0 +1,162 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.photo-container {
+    width: 230px;
+    padding: 15px;
+}
+
+#profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.name-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #1e56a0;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+}
+
+/* Columna izquierda */
+.left-column {
+    width: 230px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.left-column h2 {
+    color: #1e56a0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.left-column p, .left-column li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.left-column ul {
+    list-style-type: none;
+}
+
+.separator {
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+/* Columna derecha */
+.right-column {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.right-column h2 {
+    color: #1e56a0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.right-column h3 {
+    color: #1e56a0;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.right-column p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.info-item {
+    margin-bottom: 5px;
+}
+
+.label {
+    color: #1e56a0;
+    font-weight: bold;
+    display: block;
+}
+
+.separator-horizontal {
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+.education-item, .project-item {
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #1e56a0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    .photo-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #profile-photo {
+        width: 200px;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    .left-column {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
